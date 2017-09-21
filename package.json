@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-websocket-server",
+  "version": "1.0.0",
+  "description": "Apache Cordova websocket server Plugin",
+  "cordova": {
+    "id": "cordova-plugin-websocket-server",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huge818/cordova-plugin-websocket-server"
+  },
+  "keywords": [
+    "websocket",
+    "server",
+    "process",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=5.0.0"
+    }
+  ],
+  "author": "huge818",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/huge818/cordova-plugin-websocket-server/issues"
+  },
+  "homepage": "https://github.com/huge818/cordova-plugin-websocket-server"
+}

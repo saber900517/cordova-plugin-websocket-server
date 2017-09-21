@@ -1,4 +1,4 @@
-package cordova-plugin-websocket-server;
+package websocketServer;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -10,7 +10,7 @@ import org.json.JSONObject;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class cordova-plugin-websocket-server extends CordovaPlugin {
+public class websocketServer extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {

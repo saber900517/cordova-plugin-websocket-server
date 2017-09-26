@@ -121,7 +121,7 @@ public class websocketServer extends CordovaPlugin {
 			}
 			JSONObject errorObject = new JSONObject();
 			try{
-				errorObject.put("type", "onError");
+				errorObject.put("type", "error");
 				errorObject.put("id", id);
 				errorObject.put("exception", arg1.getMessage());
 			} catch(JSONException e){
@@ -135,7 +135,7 @@ public class websocketServer extends CordovaPlugin {
 			String id=getSocketId(arg0);
 			JSONObject msgObject = new JSONObject();
 			try{
-				msgObject.put("type", "onMessage");
+				msgObject.put("type", "message");
 				msgObject.put("data", arg1);
 				msgObject.put("socketId", id);
 			} catch(JSONException e){
@@ -150,7 +150,7 @@ public class websocketServer extends CordovaPlugin {
 			socketHashMap.put(uuid,arg0);
 			JSONObject openObject = new JSONObject();
 			try{
-				openObject.put("type", "onOpen");
+				openObject.put("type", "open");
 				openObject.put("socketId", uuid);
 				openObject.put("address", arg0.getRemoteSocketAddress());
 			} catch(JSONException e){
@@ -163,7 +163,7 @@ public class websocketServer extends CordovaPlugin {
 		public void onStart() {
 			JSONObject startObject = new JSONObject();
 			try{
-				startObject.put("type", "onStart");
+				startObject.put("type", "start");
 			} catch(JSONException e){
 				e.printStackTrace();
 			}

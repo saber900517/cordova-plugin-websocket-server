@@ -2,9 +2,9 @@
 
 应用场景：物联网设备，安卓系统上位机与下位机通讯，无显示器的板子通过热点配网等<br/>
 支持事件：message，close，error，open, start<br/>
-//支持方法：write(socketId,data)<br/>
+支持方法：write(socketId,data)<br/>
 
-只有一个.java文件文件和一个.js文件，不依赖其他第三方模块，修改维护简单。
+
 
 #安装方法: 
 

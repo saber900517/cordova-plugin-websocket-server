@@ -1,6 +1,5 @@
-# cordova-plugin-websocket-server
-
 # create a websocket server on android
+
 应用场景：物联网设备，安卓系统上位机与下位机通讯，无显示器的板子通过热点配网等<br/>
 支持事件：onconnect，ondata，onclose，<br/>
 //支持方法：write(socketId,data)<br/>

@@ -1,5 +1,8 @@
 var exec = require('cordova/exec');
+exports.startServer = function(host,port, success, error) {
+    exec(success, error, "websocketServer", "startServer", [host,port]);
+};
 
-exports.coolMethod = function(arg0, success, error) {
-    exec(success, error, "websocketServer", "coolMethod", [arg0]);
+exports.stopServer = function(success, error) {
+    exec(success, error, "websocketServer", "stopServer", []);
 };

@@ -18,11 +18,24 @@ cordova plugin add https://github.com/huge818/cordova-plugin-websocket-server.gi
 		var websocketServer=cordova.plugins.websocketServer;
 		websocketServer.stopServer();
 		websocketServer.startServer("0.0.0.0",8080,function(data){
-			   console.log(data);
-		  	 var str=JSON.stringify(data);
-		  	 console.log(str);
+			if(data.type=="message"){
+				console.log(data);
+			}
+			else if(data.type=="close"){
+				console.log(data);
+			}
+			else if(data.type=="error"){
+				console.log(data);
+			}
+			else if(data.type=="open"){
+				console.log(data);
+			}
+			else if(data.type=="start"){
+				console.log(data);
+			}
 		});
 	}, false);
+
 
 ```````````
 <br/>
